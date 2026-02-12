@@ -1,0 +1,24 @@
+export const NOTIFICATION_CONFIG = {
+  // Автоматическая очистка
+  AUTO_CLEANUP: {
+    ENABLED: true,
+    READ_NOTIFICATIONS_DAYS: 30,
+    UNREAD_NOTIFICATIONS_DAYS: 90,
+    CHECK_INTERVAL_MINUTES: 10,
+  },
+  
+  // Лимиты
+  LIMITS: {
+    MAX_NOTIFICATIONS_PER_USER: 1000,
+    MAX_UNREAD_NOTIFICATIONS: 100,
+    BATCH_DELETE_SIZE: 50,
+  },
+  
+  // Визуальные настройки
+  UI: {
+    SHOW_BROWSER_NOTIFICATIONS: true,
+    NOTIFICATION_TIMEOUT_MS: 10000,
+    DESKTOP_NOTIFICATION_ENABLED: true,
+    SOUND_ENABLED: true,
+  }
+} as const;
