@@ -592,9 +592,9 @@ export default function CustomerDebts() {
     }
 
     try {
-      const response = await api.post(`/debts/${debtId}/verify`, { 
-        isVerified 
-      });
+      await api.post(`/debts/${debtId}/verify`, { 
+      isVerified 
+    });
 
       setPendingPayments(prev => prev.filter(p => p.debtId !== debtId));
       setVerifyingPayment(null);
