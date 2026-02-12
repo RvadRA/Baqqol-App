@@ -1,7 +1,7 @@
 // socket.ts - ФИНАЛЬНАЯ УПРОЩЕННАЯ ВЕРСИЯ
 import { io, Socket } from "socket.io-client";
 // Create socket instance
-export const socket: Socket = io(import.meta.env.VITE_API_URL), {
+export const socket: Socket = io(import.meta.env.VITE_API_URL, {
   autoConnect: false, // НЕ подключаться автоматически
   auth: (cb) => {
     const token = localStorage.getItem("token");
