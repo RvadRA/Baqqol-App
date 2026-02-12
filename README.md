@@ -20,9 +20,7 @@ MongoDB Atlas
 
 ## ✅ 1.3 API Documentation
 
-README ichiga:
 
-```md
 ## 📡 API Endpoints
 
 ### Auth
